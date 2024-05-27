@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Memory</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header display-none">
+        <h1>Hello World</h1>
+        <h2>FallOut Edition</h2>
+      </header>
+    
+      <section class="score-panel display-none">
+        <h3>Score Panel</h3>
+        <ul id="star-rating" class="star-rating">
+          <li class="star"><i class="fa fa-star"></i></li>
+          <li class="star"><i class="fa fa-star"></i></li>
+          <li class="star"><i class="fa fa-star"></i></li>
+        </ul>
+        <span class="moves-counter">0</span> Moves
+        <div class="timer-container">
+          <span class="timer"><i class="fa fa-hourglass-start"></i> Timer: 00:00</span>
+        </div>
+      </section>
+    
+      <!-- Modal -->
+      <section class="win-game-modal">
+        <div id="modal" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Bravo!</h2>
+            <p class='display-none'>You have won the game and found all 8 pairs of cards.</p>
+            <img class="modal-img display-none" src="https://github.com/FoxyStoat/memory-game/blob/master/assets/img/Vault-Boy-Thumb-Up.jpg?raw=true" alt="Vault boy giving the thumbs up from the game fall out">
+            <button class="btn play-again-btn">Odigraj Opet?</button>
+          </div>
+        </div>
+      </section>
+      <div class='flex-center'>
+        <div class="reset">
+          <button class="btn reset-btn">Resetiraj <i class="fa fa-repeat"></i></button>
+        </div>
+      <ul class="deck"></ul>
+      
+    </div>
+    </div>
+    
+    <footer class="footer display-none">
+      <h3>Licensing Note</h3>
+      <p><strong>All Images are taken from <a href="http://fallout.wikia.com/wiki/Category:Vault_Boy_images" target="_blank">GamePedia Wiki Pages</a> for the Fallout Games.  The images original source are created and owned by Bethesda Softworks.  The use of these images is believed to qualify as fair use for the purpose of creative work only.</strong></p>
+    </footer>
+    
+      <script src="js/custom.js"></script>
+
+  </body>
+</html>
